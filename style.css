@@ -3,11 +3,49 @@
     height: 300px;
     border: 5px rgb(33, 36, 229) solid;
     border-radius: 10px;
+    animation-timing-function:1s;
+    animation-name: anime;
+    animation-play-state: running;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
 }
 body{
     font-family: sans-serif;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
+    height: fit-content;
+    animation-timing-function:1s;
+    animation-name: anime;
+    animation-play-state: running;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+}
+@keyframes anime {
+    0%{
+        border: 5px rgb(33, 36, 229) solid;
+    }
+    25%{
+        border: 5px rgb(183, 33, 229) solid;
+    }
+    50%{
+        border: 5px rgb(229, 167, 33) solid;
+    }
+    75%{
+        border: 5px rgb(33, 229, 62) solid;
+    }
+    100%{
+        border: 5px rgb(33, 157, 229) solid;
+    }
+}
+@media screen and (max-width: 768px) {
+    #video {
+        width: 300px;
+        border-right: none;
+        border-left: none;
+    }
 }

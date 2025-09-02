@@ -39,7 +39,7 @@ body{
         border: 5px rgb(33, 229, 62) solid;
     }
     100%{
-        border: 5px rgb(33, 157, 229) solid;
+        border: 5px rgb(33, 36, 229) solid;
     }
 }
 @media screen and (max-width: 768px) {
